@@ -1,0 +1,96 @@
+{
+  "contractAddress": "0x072edcb4062df4fe1c9e9322fb0d0821b94eb67fe2bd84d0d27e2cb721f86acb",
+  "classHash": "0x05e984a602cd74f642b53fadfa218f6fd11a6dda23553ac9eb390027698fecdb",
+  "abi": [
+    {
+      "type": "impl",
+      "name": "IGroth16VerifierBN254",
+      "interface_name": "agecheck::groth16_verifier::IGroth16VerifierBN254"
+    },
+    {
+      "type": "struct",
+      "name": "core::array::Span::<core::felt252>",
+      "members": [
+        {
+          "name": "snapshot",
+          "type": "@core::array::Array::<core::felt252>"
+        }
+      ]
+    },
+    {
+      "type": "struct",
+      "name": "core::integer::u256",
+      "members": [
+        {
+          "name": "low",
+          "type": "core::integer::u128"
+        },
+        {
+          "name": "high",
+          "type": "core::integer::u128"
+        }
+      ]
+    },
+    {
+      "type": "struct",
+      "name": "core::array::Span::<core::integer::u256>",
+      "members": [
+        {
+          "name": "snapshot",
+          "type": "@core::array::Array::<core::integer::u256>"
+        }
+      ]
+    },
+    {
+      "type": "enum",
+      "name": "core::result::Result::<core::array::Span::<core::integer::u256>, core::felt252>",
+      "variants": [
+        {
+          "name": "Ok",
+          "type": "core::array::Span::<core::integer::u256>"
+        },
+        {
+          "name": "Err",
+          "type": "core::felt252"
+        }
+      ]
+    },
+    {
+      "type": "interface",
+      "name": "agecheck::groth16_verifier::IGroth16VerifierBN254",
+      "items": [
+        {
+          "type": "function",
+          "name": "verify_groth16_proof_bn254",
+          "inputs": [
+            {
+              "name": "full_proof_with_hints",
+              "type": "core::array::Span::<core::felt252>"
+            }
+          ],
+          "outputs": [
+            {
+              "type": "core::result::Result::<core::array::Span::<core::integer::u256>, core::felt252>"
+            }
+          ],
+          "state_mutability": "view"
+        }
+      ]
+    },
+    {
+      "type": "event",
+      "name": "agecheck::groth16_verifier::Groth16VerifierBN254::Event",
+      "kind": "enum",
+      "variants": []
+    }
+  ],
+  "circuitName": "agecheck",
+  "network": "sepolia",
+  "paths": {
+    "verificationKey": "/Users/kunwaranirudhsinghchouhan/Desktop/starkshield-demo/zk/agecheck/verification_key.json",
+    "zkey": "/Users/kunwaranirudhsinghchouhan/Desktop/starkshield-demo/zk/agecheck/circuit_final.zkey",
+    "wasm": "/Users/kunwaranirudhsinghchouhan/Desktop/starkshield-demo/zk/agecheck/agecheck_js/agecheck.wasm",
+    "r1cs": "/Users/kunwaranirudhsinghchouhan/Desktop/starkshield-demo/zk/agecheck/agecheck.r1cs"
+  },
+  "deployedAt": "2026-03-10T07:09:48.743Z"
+}
